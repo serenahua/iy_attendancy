@@ -1,0 +1,51 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="manage_container">
+    <div id="path_bar"><a href="{% url "manage:index" %}">後台</a> / <a href="{% url "manage:event_list" %}">活動管理</a> / 新增活動</div>
+    <form id="vendor_form">
+        {% csrf_token %}
+
+        <input type="text" name="id" value="" hidden />
+
+        <fieldset>
+            <label for="event_date">日期：</label>
+            <input type="date" name="date" value="" id="event_date" />
+        </fieldset>
+
+        <fieldset>
+            <label for="event_name">活動名稱：</label>
+            <input type="text" name="name" value="" id="event_name" />
+        </fieldset>
+
+        <fieldset>
+            <label for="event_location">地點：</label>
+            <input type="text" name="location" value="" id="event_location" />
+        </fieldset>
+
+        <fieldset>
+            <label for="event_table_count">桌數：</label>
+            <input type="text" name="table_count" value="" id="event_table_count" />
+        </fieldset>
+
+        <fieldset>
+            <label for="event_confirm_code">確認碼：</label>
+            <input type="text" name="confirm_code" value="" id="event_confirm_code" />
+        </fieldset>
+
+        <div class="button_group">
+            <a href="{% url "manage:event_list" %}" class="button">返回</a>
+            <div class="button">送出</div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+
+

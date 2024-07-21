@@ -1,0 +1,43 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="index_container">
+    <div id="info_block_today">
+        <div class="info">今日活動：<span id="activity">113 台中</span></div>
+        <div class="info">報到率：<span id="attendancy">35% (35/100)</span></div>
+        <a href="{% url "index:check_in" %}" class="button">手動報到</a>
+        <a href="{% url "index:fast_check_in" %}" class="button">自動報到</a>
+    </div>
+    <div id="attendance_not_yet_arrived">
+        <div class="caption">尚未報到</div>
+        <table>
+          <thead>
+            <td>名稱</td>
+            <td>聯絡人</td>
+            <td>電話</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A</td>
+              <td>AAA</td>
+              <td>AAAAA</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>BBB</td>
+              <td>BBBBB</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>CCC</td>
+              <td>CCCCC</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

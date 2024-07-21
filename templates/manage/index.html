@@ -1,0 +1,17 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="manage_container">
+    <div id="manage_list">
+      <a href="{% url "manage:vendor_list" %}" class="button">商家管理</a>
+      <a href="{% url "manage:event_list" %}" class="button">活動管理</a>
+      <a href="#" class="button">報表數據</a>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}

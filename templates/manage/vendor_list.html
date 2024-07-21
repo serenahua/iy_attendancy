@@ -1,0 +1,95 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="manage_container">
+    <div id="path_bar"><a href="{% url "manage:index" %}">後台</a> / 商家管理</div>
+    <div id="vendor_list">
+        <div class="caption">商家列表</div>
+
+        <div class="func_bar">
+            <a href="{% url "manage:vendor_form" %}" class="button">新增商家</a>
+            <div class="button">匯入CSV</div>
+            <div class="button">匯出CSV</div>
+        </div>
+        <div class="func_bar">
+            <div class="button">選取</div>
+            <div class="button">刪除</div>
+        </div>
+
+        <table class="main_list">
+            <thead class="list_head">
+                <td></td>
+                <td>名稱</td>
+                <td>聯絡人</td>
+                <td>電話</td>
+                <td>手機</td>
+                <td>信箱</td>
+                <td>地址</td>
+            </thead>
+            <tbody class="list_content">
+                <tr class="vendor_row">
+                    <td><a href="" class="button">編輯</a></td>
+                    <td>A</td>
+                    <td>AAA</td>
+                    <td></td>
+                    <td>AAAAAAAA</td>
+                    <td></td>
+                    <td>AAAAAAAAAAA</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">編輯</a></td>
+                    <td>B</td>
+                    <td>BBB</td>
+                    <td>BBBBBBB</td>
+                    <td>BBBBBBBB</td>
+                    <td></td>
+                    <td>BBBBBBBBBBBBBB</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">編輯</a></td>
+                    <td>C</td>
+                    <td>CCC</td>
+                    <td></td>
+                    <td>CCCCCCCC</td>
+                    <td>CCCCCCCCCCCCCCCCCCCC</td>
+                    <td>CCCCCCCCCC</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">編輯</a></td>
+                    <td>D</td>
+                    <td>DDD</td>
+                    <td>DDDDDDDDD</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">編輯</a></td>
+                    <td>E</td>
+                    <td>EEE</td>
+                    <td>EEEEEEEE</td>
+                    <td>EEEEEEEEE</td>
+                    <td>EEEEEEEEEEEEEEEE</td>
+                    <td>EEEEEEEEEEEEEEEEEEEEEEEEEEEEE</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page_bar">
+            <div class="button"><</div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">4</div>
+            <div class="button">></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+

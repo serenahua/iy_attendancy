@@ -1,0 +1,28 @@
+{% extends 'common/guest_base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="index_container">
+  <form id="fast_check_in_block">
+
+      {% csrf_token %}
+
+      <input hidden class="info" name="vendor_id" value="123">
+      <fieldset>
+          <div class="info" name="vendor_name">報到商家：A</div>
+          <div class="info" name="">桌號：12</div>
+          <div class="info">備註：吃素</div>
+      </fieldset>
+
+      <fieldset>
+          <label for="confirm_code">音圓確認碼</label>
+          <input type="password" id="confirm_code" required>
+          <div class="hint">請交由工作人員填寫此確認碼</div>
+      </fieldset>
+
+      <button action="submit" class="button">送出</button>
+  </form>
+</div>
+
+{% endblock %}
+

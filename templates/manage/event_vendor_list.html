@@ -1,0 +1,71 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="manage_container">
+    <div id="path_bar"><a href="{% url "manage:index" %}">後台</a> / <a href="{% url "manage:event_list" %}">活動管理</a> / 賓客名單</div>
+
+    <div id="event_vendor_list">
+        <div class="caption">OOOOO活動賓客名單</div>
+
+        <div class="func_bar">
+            <a href="" class="button">新增賓客</a>
+        </div>
+        <div class="func_bar">
+            <div class="button">選取</div>
+            <div class="button">移除</div>
+        </div>
+
+        <table class="main_list">
+            <thead class="list_head">
+                <td></td>
+                <td>名稱</td>
+                <td>桌號</td>
+            </thead>
+            <tbody class="list_content">
+                <tr class="vendor_row">
+                    <td><a href="" class="button">移除</a></td>
+                    <td>A</td>
+                    <td>1</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">移除</a></td>
+                    <td>B</td>
+                    <td>1</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">移除</a></td>
+                    <td>C</td>
+                    <td>1</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">移除</a></td>
+                    <td>D</td>
+                    <td>2</td>
+                </tr>
+                <tr class="vendor_row">
+                    <td><a href="" class="button">移除</a></td>
+                    <td>E</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page_bar">
+            <div class="button"><</div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">4</div>
+            <div class="button">></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+

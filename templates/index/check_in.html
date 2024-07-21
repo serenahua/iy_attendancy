@@ -1,0 +1,29 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="index_container">
+    <form id="check_in_block">
+        {% csrf_token %}
+
+        <fieldset>
+            <label for="vendor_select">報到店家</label>
+            <select name="vendor_name" id="vendor_select" required>
+              <option value="1">A,AAA</option>
+              <option value="2">B,BBB</option>
+              <option value="3">C,CCC</option>
+              <option value="4">D,DDD</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="confirm_code">音圓確認碼</label>
+            <input type="password" id="confirm_code" required>
+        </fieldset>
+
+        <button action="submit" class="button">送出</button>
+    </form>
+</div>
+
+{% endblock %}
+

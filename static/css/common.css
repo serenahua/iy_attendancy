@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+}
+#iy_div #header {
+  background: rgba(128, 128, 128, 0.5);
+  padding: 10px 5px;
+  width: calc(100vw - 10px);
+  display: flex;
+  justify-content: space-between;
+}
+#iy_div #header #logo,
+#iy_div #header #manager {
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  padding: 2px 6px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+#iy_div #index_container {
+  width: calc(100vw - 20px);
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px;
+}
+#iy_div #index_container #info_block_today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(128, 128, 128, 0.2);
+  width: 100%;
+  height: 200px;
+}
+#iy_div #index_container #info_block_today .button {
+  border: 1px solid gray;
+  padding: 5px;
+  margin-top: 15px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+#iy_div #index_container #attendance_not_yet_arrived {
+  margin-top: 10px;
+  background: rgba(128, 128, 128, 0.2);
+  width: calc(100% - 10px);
+  height: max-content;
+  padding: 5px;
+}
+#iy_div #index_container #attendance_not_yet_arrived .caption {
+  text-align: center;
+  margin-bottom: 5px;
+}
+#iy_div #index_container #attendance_not_yet_arrived table {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-collapse: collapse;
+  width: 100%;
+}
+#iy_div #index_container #attendance_not_yet_arrived table td {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+#iy_div #index_container #check_in_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#iy_div #index_container #check_in_block fieldset {
+  border: none;
+  padding: 0;
+}
+#iy_div #index_container #fast_check_in_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#iy_div #index_container #fast_check_in_block fieldset {
+  border: none;
+  padding: 0;
+}
+#iy_div #manage_container {
+  width: calc(100vw - 20px);
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px;
+}
+#iy_div #manage_container #path_bar {
+  color: black;
+}
+#iy_div #manage_container #path_bar a {
+  text-decoration: none;
+  outline: none;
+  color: gray;
+}
+#iy_div #manage_container #manage_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#iy_div #manage_container #manage_list .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  padding: 5px;
+}
+#iy_div #manage_container #vendor_list .caption,
+#iy_div #manage_container #event_list .caption,
+#iy_div #manage_container #event_vendor_list .caption {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#iy_div #manage_container #vendor_list .func_bar,
+#iy_div #manage_container #event_list .func_bar,
+#iy_div #manage_container #event_vendor_list .func_bar {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+#iy_div #manage_container #vendor_list .func_bar .button,
+#iy_div #manage_container #event_list .func_bar .button,
+#iy_div #manage_container #event_vendor_list .func_bar .button {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  flex: 1;
+  text-align: center;
+  padding: 2px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+#iy_div #manage_container #vendor_list .main_list,
+#iy_div #manage_container #event_list .main_list,
+#iy_div #manage_container #event_vendor_list .main_list {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-collapse: collapse;
+  width: 100%;
+}
+#iy_div #manage_container #vendor_list .main_list td,
+#iy_div #manage_container #event_list .main_list td,
+#iy_div #manage_container #event_vendor_list .main_list td {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+#iy_div #manage_container #vendor_list .page_bar,
+#iy_div #manage_container #event_list .page_bar,
+#iy_div #manage_container #event_vendor_list .page_bar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+#iy_div #manage_container #vendor_form,
+#iy_div #manage_container #event_form {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#iy_div #manage_container #vendor_form fieldset,
+#iy_div #manage_container #event_form fieldset {
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+#iy_div #manage_container #vendor_form .button_group,
+#iy_div #manage_container #event_form .button_group {
+  display: flex;
+  gap: 10px;
+}
+#iy_div #manage_container #vendor_form .button_group .button,
+#iy_div #manage_container #event_form .button_group .button {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  flex: 1;
+}

@@ -1,0 +1,55 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="manage_container">
+    <div id="path_bar"><a href="{% url "manage:index" %}">後台</a> / <a href="{% url "manage:vendor_list" %}">商家管理</a> / 新增商家</div>
+    <form id="vendor_form">
+        {% csrf_token %}
+
+        <input type="text" name="id" value="" hidden />
+
+        <fieldset>
+            <label for="vendor_name">商家名稱：</label>
+            <input type="text" name="name" value="" id="vendor_name" />
+        </fieldset>
+
+        <fieldset>
+            <label for="vendor_contact">聯絡人：</label>
+            <input type="text" name="contact_persion" value="" id="vendor_contact" />
+        </fieldset>
+
+        <fieldset>
+            <label for="vendor_phone">電話：</label>
+            <input type="text" name="phone" value="" id="vendor_phone" />
+        </fieldset>
+
+        <fieldset>
+            <label for="vendor_mobile">手機：</label>
+            <input type="text" name="mobile" value="" id="vendor_mobile" />
+        </fieldset>
+
+        <fieldset>
+            <label for="vendor_email">信箱：</label>
+            <input type="text" name="email" value="" id="vendor_email" />
+        </fieldset>
+
+        <fieldset>
+            <label for="vendor_address">地址：</label>
+            <input type="text" name="address" value="" id="vendor_address" />
+        </fieldset>
+
+        <div class="button_group">
+            <a href="{% url "manage:vendor_list" %}" class="button">返回</a>
+            <div class="button">送出</div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+

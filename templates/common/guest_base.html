@@ -1,0 +1,46 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>音圓活動報到系統</title>
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    {% comment %} <meta property="og:url" content="{% static 'images/svg/Myanlife-logo.svg' %}" /> {% endcomment %}
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="DC.Publisher" content="" />
+    <meta name="DC.Description" content="" />
+    <meta name="DC.Type" content="Website" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="{% static "css/common.css" %}">
+
+    {% block css %}
+    {% endblock %}
+</head>
+
+<body>
+  <div id="iy_div">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+
+
+{% block js %}
+{% endblock %}
+
+</html>
+
